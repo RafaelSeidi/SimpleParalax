@@ -1,0 +1,43 @@
+/* declarando variáveis | root é a raiz, mostra que nossas variáveis poderão ser "enxergadas" em qualquer local | para declarar uma variável é necessário começar com "--" */
+:root {
+    --bg-dark: #000;
+}
+
+/* reset de css -> zerar algumas formatações com o "*", que é o seletor universal, representando todos os elementos da página */
+* {
+    margin: 0;
+}
+
+.container {
+    /* vw e vh torna o site responsivo */
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    
+    /* cover faz com que a imagem fique no tamanho certo do background */
+    background-size: cover;
+    
+    /* seus valores colocados afetam a esquerda e o topo baseado, nessa ordem | 50% é igual a center */
+    background-position: 50%;
+
+    /* o fixed faz com que a imagem não mude sua posição, sendo isso perceptível quando se scrolla o site */
+    background-attachment: fixed;
+}
+
+.bg-image-1 {
+    /* na url, os ../ significam que está voltando uma pasta, neste caso está indo para a pasta Aula - 0104 */
+    background-image: url(../images/pexels-andrea-piacquadio-3824771.jpg);    
+}
+
+.bg-image-2 {
+    /* imagem em css é só decorativa, imagem em HTML possibilita interação, como cliques, hover, etc. */
+    background-image: url(../images/pexels-mohamed-abdelghaffar-783941.jpg);
+}
+
+.bg-image-3 {
+    background-image: url(../images/pexels-ric-rodrigues-1278566.jpg);
+}
+.bg-color-1 {
+    /* utilizando a variável previamente declarada */
+    background-color: var(--bg-dark);
+}
